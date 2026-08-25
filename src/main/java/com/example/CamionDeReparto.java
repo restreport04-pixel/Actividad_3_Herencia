@@ -8,7 +8,7 @@ public class CamionDeReparto extends Transporte {
     // CONSTRUCTOR
     public CamionDeReparto(String idTransporte, double combustible, double capacidadCarga, boolean tieneRefrijeración){
         // super envía los datos obligatorios al constructor de la clase padre Transporte
-        super(idTransporte, combustible, capacidadCarga);
+        super(idTransporte, combustible, capacidadCarga); // Enviar datos al padre
         this.tieneRefrijeración = tieneRefrijeración;
     }
 
