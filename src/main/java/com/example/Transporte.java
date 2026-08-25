@@ -50,7 +50,7 @@ public class Transporte {
     public void setCapacidadCarga(double carga){
         if (carga < 0)
         {
-            System.out.println("❌ Error: La capacidad de carga no puede ser negativa.");
+            System.out.println("Error: La capacidad de carga no puede ser negativa.");
         }
         else 
         {
@@ -63,11 +63,11 @@ public class Transporte {
         if (this.combustible >= consumo)
         {
             this.combustible -= consumo;
-            System.out.println("🚚 El transporte " + idTransporte + " viajo " + distancia + " km. Combustible restante: " + this.combustible);
+            System.out.println("El transporte " + idTransporte + " viajo " + distancia + " km. Combustible restante: " + this.combustible);
         }
         else 
         {
-            System.out.println("❌ No hay suficiente combustible en " + idTransporte + " para viajar " + distancia + " km.");
+            System.out.println("No hay suficiente combustible en " + idTransporte + " para viajar " + distancia + " km.");
         }
     }
 }

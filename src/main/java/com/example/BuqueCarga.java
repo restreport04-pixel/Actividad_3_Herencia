@@ -22,8 +22,8 @@ public class BuqueCarga extends Transporte{
     }
 
     // MÉTODO PROPIO
-    public void atacarEnPuerto(){
-        System.out.println("⚓ El buque con ID: " + getIdTransporte() + " ha atracado en el puerto y esta listo para descarga.");
+    public void atracarEnPuerto(){
+        System.out.println("El buque con ID: " + getIdTransporte() + " ha atracado en el puerto y esta listo para descarga.");
     }
 
     // MÉTODO mostrarDatos
@@ -32,11 +32,11 @@ public class BuqueCarga extends Transporte{
         double costoViaje = cantidadContenedores * 150.0;
 
         System.out.println("==================================================");
-        System.out.println("🚢 DATOS DEL BUQUE DE CARGA - " + getIdTransporte());
+        System.out.println("DATOS DEL BUQUE DE CARGA - " + getIdTransporte());
         System.out.println("Combustible actual    : " + getCombustible() + "%");
         System.out.println("Capacidad de carga    : " + getCapacidadCarga() + " toneladas");
         System.out.println("Cantidad Contenedores    : " + cantidadContenedores);
-        System.out.println("Costo de viaje Estudiante    : $" + costoViaje + "USD");
+        System.out.println("Costo de viaje estimado    : $" + costoViaje + "USD");
         System.out.println("==================================================\n");
     }
 }
